@@ -1,0 +1,32 @@
+# Memory Map for ScaleSim with 2 Banks
+# Bank 0: 10000000 15000000
+# Bank 1: 15000000 20000000
+
+Filter
+
+bank 0
+{
+    address-range 10000000 15000000;
+    file /path/to/bank0.bin;
+}
+
+bank 1
+{
+    address-range 15000000 20000000;
+    file /path/to/bank1.bin;
+}
+
+IFMAP
+
+
+bank 0
+{
+    address-range 0 5000000;
+    file /path/to/bank0.bin;
+}
+
+bank 1
+{
+    address-range 5000000 10000000;
+    file /path/to/bank1.bin;
+}
